@@ -1,0 +1,5 @@
+Libraries used in this project include
+
+bcm2835: a c library designed for communication protocol programming on a raspberry pi
+
+High precision AD_DA board: code designed to run on the high precision ad/da breakout board written to call the bcm2835 library
