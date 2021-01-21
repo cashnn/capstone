@@ -66,7 +66,7 @@ UBYTE DEV_ModuleInit(void)
     bcm2835_spi_begin();                                         //Start spi interface, set spi pin for the reuse function
     bcm2835_spi_setBitOrder(BCM2835_SPI_BIT_ORDER_MSBFIRST);     //High first transmission
     bcm2835_spi_setDataMode(BCM2835_SPI_MODE1);                  //spi mode 0
-    bcm2835_spi_setClockDivider(BCM2835_SPI_CLOCK_DIVIDER_64);  //Frequency
+    bcm2835_spi_setClockDivider(BCM2835_SPI_CLOCK_DIVIDER_256);  //Frequency
     return 0;
 }
 
