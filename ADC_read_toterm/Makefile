@@ -13,7 +13,7 @@ CC = gcc
 DEBUG = -g -O0 -Wall
 CFLAGS += $(DEBUG) 
 
-LIB = -lbcm2835 -lm
+LIB = -lbcm2835 -lm -lpthread
 
 ${TARGET}:${OBJ_O}
 	$(CC) $(CFLAGS) $(OBJ_O) -o $@  $(LIB)
